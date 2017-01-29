@@ -1,7 +1,6 @@
 FROM actuino/python2-armhf-dev:1
 #FROM alexellis2/python2-armhf:2
 
-# Use a single layer to minimize image size
 #RUN apt-get -q update && apt-get -qy install python-dev python-pip build-essential && \
 
 RUN  pip install -I rpi_ws281x && \
