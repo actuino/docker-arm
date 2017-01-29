@@ -5,7 +5,7 @@ USER root
 # must be run with docker --privileged
 
 RUN apt-get update && \
-    apt-get -qy install ca-certificates python python-dev python-pip git build-essential && \
+    apt-get -qy install ca-certificates python python-dev python-pip git nano build-essential && \
 	pip install rpi.gpio && \
     rm -rf /var/lib/apt/lists/* && \
     apt-get -qy clean all && \
